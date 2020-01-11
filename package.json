@@ -1,12 +1,12 @@
 {
-  "name": "ts-code-quality-config",
-  "version": "1.0.0",
+  "name": "@traff-proxy/ping-server",
+  "version": "1.0.1",
   "description": "",
-  "main": "src/app.ts",
+  "main": "./src/app.ts",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon",
-    "inspect": "nodemon --inspect src/app.ts",
+    "start:dev": "nodemon",
+    "start:debug": "nodemon --config nodemon-debug.json",
     "lint": "npm run lint:js ",
     "lint:eslint": "eslint --ignore-path .gitignore --ext .ts",
     "lint:js": "npm run lint:eslint src/",
@@ -27,6 +27,7 @@
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "ts-node": "^8.6.0",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4"
   }
 }
