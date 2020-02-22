@@ -10,8 +10,8 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier/@typescript-eslint",  // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-    "plugin:prettier/recommended"  // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+    "plugin:prettier/recommended" // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -106,16 +106,16 @@
 
     "@typescript-eslint/no-extra-parens": ["error"], // Disallow unnecessary parentheses
     "@typescript-eslint/member-ordering": "warn", // Require a consistent member declaration order
-    "@typescript-eslint/no-magic-numbers": [
-      "error",
-      {
-        "ignoreNumericLiteralTypes": true,
-        "ignoreEnums": true,
-        "enforceConst": true,
-        "ignoreReadonlyClassProperties": true,
-        "ignore": [0, 24, 60, 1000]
-      }
-    ], // Disallows magic numbers
+//    "@typescript-eslint/no-magic-numbers": [
+//      "error",
+//      {
+//        "ignoreNumericLiteralTypes": true,
+//        "ignoreEnums": true,
+//        "enforceConst": true,
+//        "ignoreReadonlyClassProperties": true,
+//        "ignore": [0, 24, 60, 1000]
+//      }
+//    ], // Disallows magic numbers
     "@typescript-eslint/brace-style": ["error", "1tbs"], // Enforce consistent brace style for blocks
     "@typescript-eslint/quotes": ["error", "single", { "avoidEscape": true }], // Enforce the consistent use of either backticks, double, or single quotes
     "@typescript-eslint/func-call-spacing": ["error", "never"], // Require or disallow spacing between function identifiers and their invocations
