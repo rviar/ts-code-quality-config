@@ -1,29 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es2018",
     "lib": ["es2018", "esnext.asynciterable", "dom"],
     "typeRoots": ["./node_modules/@types", "./src/types"],
     "module": "commonjs",
-    "moduleResolution": "node",
     "declaration": true,
-    "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
-    "pretty": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2018",
     "sourceMap": true,
-    "allowJs": true,
-    "noEmit": false,
-    "esModuleInterop": true,
     "strict": true,
     "noImplicitReturns": true,
-    "strictPropertyInitialization": false,
     "resolveJsonModule": true,
-    "incremental": true,
     "outDir": "./dist",
-    "rootDir": "."
+    "baseUrl": "./",
+    "incremental": true
   },
-  "include": ["./src/**/*", "./test/**/*-spec.ts"],
   "exclude": ["node_modules", "dist"]
 }
